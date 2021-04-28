@@ -7,6 +7,7 @@ namespace GradeBook
     {
         public Book(string name)
         {
+            category = "";
             grades = new List<double>();
             Name = name;
         }
@@ -86,7 +87,34 @@ namespace GradeBook
             }
             return result;
         }
+        // public string Name 
+        // {
+        //     get
+        //     {
+        //         return name.ToUpper();
+        //     }
+        //     set 
+        //     {
+        //         //if (value != null)
+        //         if (!String.IsNullOrEmpty(value))
+        //         {
+        //             name = value;
+        //         }
+        //         else 
+        //         {
+
+        //         }
+        //     }
+        // }
+        public string Name 
+        {
+            get;
+            private set;
+        }
+        private string name;
         private List<double> grades;
-        public string Name;
+
+        readonly string category = "Science";
+        public const string VERSION ="1.0";
     }
 }
