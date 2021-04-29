@@ -29,6 +29,14 @@ namespace GradeBook
             // book.AddGrade(90.5);
             // book.AddGrade(77.5);
             
+            book.GradeAdded += OnGradeAdded;
+            book.GradeAdded += OnGradeAdded;
+            book.GradeAdded -= OnGradeAdded;
+            book.GradeAdded += OnGradeAdded;
+            //The event 'Book.GradeAdded' can only appear on the left hand side of += or -= 
+            //(except when used from within the type 'Book') [GradeBook]csharp(CS0070)
+            //book.GradeAdded = null;
+
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit.");
@@ -68,6 +76,11 @@ namespace GradeBook
             Console.WriteLine($"The highest grade is {stats.High}");
             Console.WriteLine($"The average grade is {stats.Average:N1}");
             Console.WriteLine($"The letter grade is {stats.Letter}");
+
+        }
+
+        static void OnGradeAdded(object sender, EventArgs e)
+        {
 
         }
     }

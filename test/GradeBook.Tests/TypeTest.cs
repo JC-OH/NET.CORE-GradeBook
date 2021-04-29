@@ -11,8 +11,41 @@ namespace GradeBook.Tests
     {
 
     }
+    public delegate string WriteLogDelegate(string logMessage);
     public class TypeTests
     {
+        int count = 0;
+        [Fact]
+        public void WriteLogMultiDelegateCanPointToMethods()
+        {
+            WriteLogDelegate log = ReturnMessage;
+            log += ReturnMessage;
+            log += IncrementCount;
+
+            var result = log("Hello!");
+
+            Assert.Equal(3, count);
+        }
+        [Fact]
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log;
+            //log = new WriteLogDelegate(ReturnMessage);
+            log = ReturnMessage;
+            var result = log("Hello!");
+
+            Assert.Equal("Hello!", result);
+        }
+        string IncrementCount(string message)
+        {
+            count++;
+            return message;
+        }
+        string ReturnMessage(string message)
+        {
+            count++;
+            return message;
+        }
         [Fact]
         public void StringBehaveLikeValueTypes()
         {
@@ -30,7 +63,11 @@ namespace GradeBook.Tests
         {
             return name.ToUpper();
         }
+        [Fact]
+        public void TestDelegatge()
+        {
 
+        }
         [Fact]
         public void ValueTypeCanPassByReference()
         {

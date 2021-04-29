@@ -5644,11 +5644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectUniqueName": "D:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "projectName": "GradeBook.Tests",
-      "projectPath": "d:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectPath": "D:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "d:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\obj\\",
+      "outputPath": "D:\\Source\\NET.CORE-GradeBook\\test\\GradeBook.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5668,8 +5668,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "d:\\Source\\NET.CORE-GradeBook\\src\\GradeBook\\GradeBook.csproj": {
-              "projectPath": "d:\\Source\\NET.CORE-GradeBook\\src\\GradeBook\\GradeBook.csproj"
+            "D:\\Source\\NET.CORE-GradeBook\\src\\GradeBook\\GradeBook.csproj": {
+              "projectPath": "D:\\Source\\NET.CORE-GradeBook\\src\\GradeBook\\GradeBook.csproj"
             }
           }
         }
