@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1yOTIQV9iVwDWhK8eDrVW4qPsCIChOqKfJhF5XscFOfTsZXVisk94pRe60gbfAjbfa8xoo+hsdG3iS8KQ2D4ig==",
+  "dgSpecHash": "BCE3xrzhbwlDJY/YmOlR5eL2V2TGMZqB/uWdYC8e30oMNrN2okhNxTNyMuBP+afHfELHglLFS9uD+OlMaqn7BA==",
   "success": true,
-  "projectFilePath": "D:\\Source\\NET.CORE-GradeBook\\src\\GradeBook\\GradeBook.csproj",
+  "projectFilePath": "D:\\Source\\NET.CORE-GradeBook\\src\\gradebook\\gradebook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

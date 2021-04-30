@@ -81,7 +81,7 @@ namespace GradeBook
 
         static void OnGradeAdded(object sender, EventArgs e)
         {
-
+            Console.WriteLine("Added Grade.");
         }
     }
 }
